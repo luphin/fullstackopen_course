@@ -6,7 +6,7 @@ sequenceDiagram
 
     user->>browser: Type a word/phrase in box
     user->>browser: Press "Send" buttom
-    Note right of browser: the function does not validate the data, so that it has at least one character.
+    Note right of browser: The function does not validate the data, so that it has at least one character.
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note {note: word/phrase entered}
     activate server
     server-->>browser: 302 Found
